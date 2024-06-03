@@ -1,6 +1,6 @@
 import React from 'react'
 import { gamesData } from '../../gamesData'
-import GameCard from '../GameCard/GameCard'
+import { GameCard } from '../../components'
 import './Games.scss'
 
 const Games = () => {
@@ -9,7 +9,7 @@ const Games = () => {
   return (
     <div className="games-container flex">
 
-      {gamesData.map((game) => (<GameCard gameData={game} key={`game-${game.id}`} />))}
+      {gamesData.map((game) => (<GameCard game={game} key={`game-${game.id}`} />))}
 
     </div>
   )

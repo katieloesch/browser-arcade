@@ -1,10 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './GameCard.scss'
 
-const GameCard = ({ gameData }) => {
+const GameCard = ({ game }) => {
   return (
     <div className='game-card flex'>
-        <p>{gameData.title}</p>
+        <h3>
+          <Link to={game.url}>{game.title}</Link>
+        </h3>
       
     </div>
   )
