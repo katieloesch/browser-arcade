@@ -1,1 +1,33 @@
-.home {}
+
+
+// .home-container {
+//     position: relative;
+//   }
+  
+
+  
+//   .home-content {
+//     position: relative;
+//     z-index: 10;
+//   }
+
+.home-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Ensure overflow is hidden if the canvas goes beyond the container */
+
+    
+  }
+  
+  .home-content {
+    position: relative;
+    z-index: 10;
+    padding: 20px; /* Add some padding for better readability */
+
+    .app-title {
+        color: #f86c49;
+        text-align: center;
+        z-index: 1;
+    }
+  }

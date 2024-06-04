@@ -1,11 +1,28 @@
 :root {
   /* colours */
-  --offwhite: rgba(255, 255, 255, 0.7);
-  --green-light: rgb(125, 190, 125);
-  --green-dark: rgb(45, 77, 45);
-  --green-deep: rgb(15, 30, 15);
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --green: rgb(0, 204, 51);
 
-   /* fonts */
+  /* fonts */
+}
+
+html {
+  background-color: rgb(17, 17, 17);
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 * {
@@ -15,23 +32,9 @@
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-body {
-  min-height: 90vh;
-  min-width: 100vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: black;
-  color: greenyellow;
-
-}
-
 .flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.app-title {}
-
