@@ -9,7 +9,7 @@ const Home = () => {
       <MatrixEffectCanvas />
 
       <div className='home-content'>
-        <h1 className="app-title">Browser Arcade</h1>
+        <h1 className="app-title">Welcome to the Browser Arcade</h1>
         <Games />
       </div>
      

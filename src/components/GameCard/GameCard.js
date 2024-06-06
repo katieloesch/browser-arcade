@@ -4,12 +4,7 @@ import './GameCard.scss'
 
 const GameCard = ({ game }) => {
   return (
-    <div className='game-card flex'>
-        <h3>
-          <Link to={game.url}>{game.title}</Link>
-        </h3>
-      
-    </div>
+    <Link to={game.url} className={`game-card flex ${game.alias}`}>{game.title}</Link>
   )
 }
 

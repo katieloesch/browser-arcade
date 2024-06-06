@@ -1,18 +1,23 @@
-export const gamesData = [{
-    title: 'Tic Tac Toe',
+export const gamesData = [
+  {
     id: 0,
-    url: '/tictactoe'
+    title: 'Tic Tac Toe',
+    url: '/tictactoe',
+    alias: 'ttt',
   }, {
-    title: 'Hangman',
     id: 1,
-    url: '/hangman'
+    title: 'Hangman',
+    url: '/hangman',
+    alias: 'hangman',
   }, {
-    title: 'Simon',
     id: 2,
-    url: '/simon'
+    title: 'Simon',
+    url: '/simon',
+    alias: 'simon',
   }, {
-    title: 'Rock Paper Scissors',
     id: 3,
-    url: '/rockpaperscissors'
+    title: 'Rock Paper Scissors',
+    url: '/rockpaperscissors',
+    alias: 'rps',
   }
 ]

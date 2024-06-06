@@ -1,10 +1,23 @@
+/* font inmports */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
 :root {
-  /* colours */
-  --black: rgb(0, 0, 0);
+  /* matrix effect */
+  --black: rgb(17, 17, 17);
   --white: rgb(255, 255, 255);
   --green: rgb(0, 204, 51);
 
   /* fonts */
+  --font-editorial: "Press Start 2P";
+
+  /* buttons */
+  --btn-ttt: yellow;
+  --btn-hangman: rgb(255, 70, 252);
+  --btn-simon:  #21ebff;
+  --btn-rps: tomato;
+
 }
 
 html {
