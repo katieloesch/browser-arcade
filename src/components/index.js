@@ -1,15 +1,8 @@
-//Landing Page
-export { default as Home } from './Home/Home'
-    //Landing Page components
-    export { default as Games } from './Games/Games'
-    export { default as GameCard } from './GameCard/GameCard';
+//Landing Page components
+export { default as MatrixEffectCanvas } from './landing_page/MatrixEffectCanvas/MatrixEffectCanvas';
+export { default as Games } from './landing_page/Games/Games';
+export { default as GameCard } from './landing_page/GameCard/GameCard';
 
-// Games
-export { default as Hangman } from './Hangman/Hangman';
-export { default as RockPaperScissors } from './RockPaperScissors/RockPaperScissors';
-export { default as Simon } from './Simon/Simon';
-export { default as TicTacToe } from './TicTacToe/TicTacToe';
-export { default as PageNotFound } from './PageNotFound/PageNotFound'
-
-    //Game Page components
-    export { default as BtnHome } from './BtnHome/BtnHome'
+//shared components
+export { default as BtnHome } from './shared/BtnHome/BtnHome';
+export { default as PageTransition } from './shared/PageTransition/PageTransition';
