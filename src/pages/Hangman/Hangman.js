@@ -1,12 +1,14 @@
 import React from 'react';
-import { BtnHome } from '../../components';
+
+import { BtnHome, GameContainer } from '../../components';
+import './Hangman.scss';
 
 const Hangman = () => {
   return (
-    <div>
+    <GameContainer game={'hangman'}>
       <h2>Hangman</h2>
       <BtnHome />
-    </div>
+    </GameContainer>
   );
 };
 

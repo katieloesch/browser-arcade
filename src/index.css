@@ -1,48 +1,46 @@
 /* font inmports */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
-
 :root {
   /* matrix effect */
   --black: rgb(17, 17, 17);
+  --bg: rgb(17, 17, 17);
   --white: rgb(255, 255, 255);
   --green: rgb(0, 204, 51);
 
   /* fonts */
-  --font-editorial: "Press Start 2P";
+  --font-editorial: 'Press Start 2P';
 
   /* buttons */
   --btn-ttt: yellow;
   --btn-hangman: rgb(255, 70, 252);
-  --btn-simon:  #21ebff;
+  --btn-simon: #21ebff;
   --btn-rps: tomato;
-
 }
 
 html {
   background-color: rgb(17, 17, 17);
-  height: 100%;
-  overflow: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 body {
-  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 100vw;
   overflow: hidden;
   position: relative;
-  width: 100%;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .flex {

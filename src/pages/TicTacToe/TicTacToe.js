@@ -1,13 +1,14 @@
 import React from 'react';
-import { BtnHome } from '../../components';
+
+import { BtnHome, GameContainer } from '../../components';
+import './TicTacToe.scss';
 
 const TicTacToe = () => {
   return (
-    <div>
+    <GameContainer game={'ttt'}>
       <h2>TicTacToe</h2>
-
       <BtnHome />
-    </div>
+    </GameContainer>
   );
 };
 

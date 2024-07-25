@@ -35,9 +35,13 @@ npm install
 
 ## <a name="technologies"></a> 4. Technologies Used
 
-This application is based in ReactJS (v18.3.1), JSX and SCSS.
+This application is based in ReactJS (v18.3.1) and SCSS(v^1.77.8).
 
-- it was created using the 'create-react-app' command
+- package manager: npm (v10.8.1)
+
+  - https://www.npmjs.com/
+
+- the app was created using the 'create-react-app' command
 - https://create-react-app.dev/
 
 ```zsh
@@ -47,9 +51,16 @@ npx create-react-app .
 ### Dependencies:
 
 - routing
+
   - react-router-dom (v6.23.1)
     - https://www.npmjs.com/package/react-router-dom
     - https://github.com/remix-run/react-router
+
+- animations
+  - framer-motion (v11.3.17)
+    - npm: https://www.npmjs.com/package/framer-motion
+    - repo: https://github.com/framer/motion
+    - homepage: https://www.framer.com/motion/
 
 ### UI
 
@@ -86,15 +97,23 @@ npx create-react-app .
 
 ### Resources and tutorials:
 
+- routing:
+  - react-router docs: Migrating to RouterProvider:
+    - https://reactrouter.com/en/main/upgrading/v6-data
+  - blogs:
+    - [The Power Of CreateBrowserRouter: Optimizing Your React App's Navigation](https://www.dhiwise.com/post/the-power-of-createbrowserrouter-optimizing-your-react-app) by Daxesh Patel
+    - [Getting Started with createBrowserRouter in react-router-dom](https://medium.com/@pavitramodi.it/getting-started-with-createbrowserrouter-in-react-router-dom-e3131820fef4) by [Pavitra Modi](https://medium.com/@pavitramodi.it)
+  - Youtube:
+    - [React Router in Depth #3 - Router Provider, createBrowserRouter & Outlet](https://www.youtube.com/watch?v=5s57C7leXc4&pp=ygUacmVhY3QgY3JlYXRlYnJvd3NlcnJvdXRlciA%3D) by [Net Ninja](https://www.youtube.com/@NetNinja)
+- page transitions
+  - framer-motion docs:
+    - https://www.framer.com/motion/animation/
+  - Youtube:
+    - [Build and Deploy a Portfolio Website Using Next JS, Tailwind CSS & Framer Motion](https://www.youtube.com/watch?v=dImgZ_AH7uA) by [Cristian Mihai](https://www.youtube.com/@cristianmihai01)
 - matrix effect canvas:
   - YouTube: [Hacking Matrix Rain Effect using HTML CSS & JavaScript](https://www.youtube.com/watch?v=uIq9gmlenlA&list=PL5TCQHRtvHGkuR2YZDf_2lDFuc9m5OUlO&index=22) by [CodeCreative](https://www.youtube.com/@CodeCreativeYT)
   - YouTube: [Matrix raining code effect using HTML, CSS and Javascript](https://www.youtube.com/watch?v=y4K_5CVz7Cs&list=PL5TCQHRtvHGkuR2YZDf_2lDFuc9m5OUlO&index=21) by [JavaScript Academy](https://www.youtube.com/@JsAcademyOfficial)
-- routing with react router:
-
-  - YouTube: [Learn React Router v6 In 45 Minutes](https://www.youtube.com/watch?v=Ul3y1LXxzdU) by [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified)
-  - blog: [Ultimate React Router v6 Guide](https://blog.webdevsimplified.com/2022-07/react-router/) by [Web Dev Simplified Blog](https://blog.webdevsimplified.com/)
-
-- neon button hover effect on the landing page:
+- neon button hover effect (landing page):
   - [CSS Button Hover Effects | Neon Light Button Animation Effects on Hover](https://www.youtube.com/watch?v=8NMObsAKDBQ&list=PL5e68lK9hEzd81JLjU2ey6WqODkKB2xFF&index=98) by [Online Tutorials](https://www.youtube.com/@OnlineTutorialsYT)
 
 ## <a name="deliverables"></a> 5. Deliverables
@@ -131,22 +150,20 @@ This was a solo project I built over the course of '' days.
 - As a user, I should be able to quickly find the developer's contact information including email, LinkedIn and GitHub accounts.
 - As a user, I should be able to navigate the website from any device.
 
+### Build process
+
+To see the build process for the individual games, please visit the dedicate repository readmes:
+
+- TicTacToe repo - https://github.com/katieloesch/tictactoe-react
+- Hangman repo - https://github.com/katieloesch/rock-paper-scissors-react
+- Rock Paper Scissors repo - https://github.com/katieloesch/simon-react
+- Simon repo - https://github.com/katieloesch/hangman-react
+
 ### Day 1: 03/04/2024
 
 - create-react-app
 - react-router -> set up a route for each game
 - canvas: matrix effect
-
-### Links to game repos
-
-- TicTacToe
-  - https://github.com/katieloesch/tictactoe-react
-- Hangman
-  - https://github.com/katieloesch/rock-paper-scissors-react
-- Rock Paper Scissors
-  - https://github.com/katieloesch/simon-react
-- Simon
-  - https://github.com/katieloesch/hangman-react
 
 <img src="./src/assets/images/wireframe.jpg" alt="wireframe" width="450">
 
@@ -161,6 +178,12 @@ I wanted the background to look like the matrix effect so I created a canvas ele
 - main menu
 - game buttons
 - add google font
+
+### 25/07/2024
+
+- change folder structure to separte pages into different directory than components
+- update routing from BrowserRouter, Routes, Route to createBrowserRouter, RouterProvider
+- install framer motion
 
 ## 7. <a name="challenges"></a> Challenges
 
