@@ -1,4 +1,5 @@
-import { Route, Routes } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import {
   LandingPage,
   TicTacToe,
@@ -8,17 +9,36 @@ import {
   PageNotFound,
 } from './pages';
 
-function App() {
-  return (
-    <Routes>
-      <Route path='/' element={<LandingPage />} />
-      <Route path='/tictactoe' element={<TicTacToe />} />
-      <Route path='/hangman' element={<Hangman />} />
-      <Route path='/rockpaperscissors' element={<RockPaperScissors />} />
-      <Route path='/simon' element={<Simon />} />
-      <Route path='*' element={<PageNotFound />} />
-    </Routes>
-  );
-}
+const router = createBrowserRouter([
+  {
+    path: '/',
+    errorElement: <PageNotFound />,
+    children: [
+      {
+        index: true,
+        element: <LandingPage />,
+      },
+      {
+        path: 'tictactoe',
+        element: <TicTacToe />,
+      },
+      {
+        path: 'hangman',
+        element: <Hangman />,
+      },
+      {
+        path: 'simon',
+        element: <Simon />,
+      },
+      {
+        path: 'rockpaperscissors',
+        element: <RockPaperScissors />,
+      },
+    ],
+  },
+]);
 
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 export default App;
