@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import {
   LandingPage,
@@ -11,31 +10,19 @@ import {
   PageNotFound,
 } from './pages';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <LandingPage />,
-    errorElement: <PageNotFound />,
-  },
-  {
-    path: '/tictactoe',
-    element: <TicTacToe />,
-  },
-  {
-    path: '/hangman',
-    element: <Hangman />,
-  },
-  {
-    path: '/simon',
-    element: <Simon />,
-  },
-  {
-    path: '/rockpaperscissors',
-    element: <RockPaperScissors />,
-  },
-]);
-
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <Router>
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/tictactoe' element={<TicTacToe />} />
+        <Route path='/hangman' element={<Hangman />} />
+        <Route path='/simon' element={<Simon />} />
+        <Route path='/rockpaperscissors' element={<RockPaperScissors />} />
+        <Route path='*' element={<PageNotFound />} />
+      </Routes>
+    </Router>
+  );
 };
+
 export default App;
