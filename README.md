@@ -165,12 +165,12 @@ The build process for the individual games can be found in the readme file of th
 - react-router -> set up a route for each game
 - canvas: matrix effect
 
-<img src="./src/assets/images/wireframe.svg" alt="wireframe" width="500">
-<img src="./src/assets/images/wireframe2.svg" alt="wireframe" width="500">
+<img src="./src/assets/images/wireframe.svg" alt="wireframe" width="450">
+<img src="./src/assets/images/wireframe2.svg" alt="wireframe" width="600">
 
 I wanted the background to look like the matrix effect so I created a canvas element and some JS code for the animation.
 
-<img src="./src/assets/images/matrix_effect.jpg" alt="screenshot of backdrop with matrix effect" width="500">
+<img src="./src/assets/images/matrix_effect.jpg" alt="screenshot of backdrop with matrix effect" width="600">
 
 ### Day 2
 
