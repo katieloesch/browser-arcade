@@ -1,5 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from 'react-router-dom';
+
+import { AnimatePresence } from 'framer-motion';
 
 import {
   LandingPage,
@@ -10,10 +17,11 @@ import {
   PageNotFound,
 } from './pages';
 
-const App = () => {
+const AnimatedRoutes = () => {
+  const location = useLocation();
   return (
-    <Router>
-      <Routes>
+    <AnimatePresence mode='wait' initial={true}>
+      <Routes location={location} key={location.pathname}>
         <Route path='/' element={<LandingPage />} />
         <Route path='/tictactoe' element={<TicTacToe />} />
         <Route path='/hangman' element={<Hangman />} />
@@ -21,6 +29,14 @@ const App = () => {
         <Route path='/rockpaperscissors' element={<RockPaperScissors />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
+    </AnimatePresence>
+  );
+};
+
+const App = () => {
+  return (
+    <Router>
+      <AnimatedRoutes />
     </Router>
   );
 };
