@@ -32,7 +32,7 @@ const MatrixEffectCanvas = () => {
       context.fillStyle = 'rgba(0, 0, 0, 0.05)';
       context.fillRect(0, 0, windowWidth, windowHeight);
       context.font = '700 ' + fontSize + 'px sans-serif';
-      context.fillStyle = '#00cc33';
+      context.fillStyle = '#02ab48';
 
       for (let i = 0; i < columns; i++) {
         let index = Math.floor(Math.random() * str.length);
