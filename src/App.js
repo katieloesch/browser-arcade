@@ -12,9 +12,9 @@ import {
   LandingPage,
   TicTacToe,
   Hangman,
-  RockPaperScissors,
   Simon,
   PageNotFound,
+  RockPaperScissorsPage,
 } from './pages';
 
 const AnimatedRoutes = () => {
@@ -26,7 +26,7 @@ const AnimatedRoutes = () => {
         <Route path='/tictactoe' element={<TicTacToe />} />
         <Route path='/hangman' element={<Hangman />} />
         <Route path='/simon' element={<Simon />} />
-        <Route path='/rockpaperscissors' element={<RockPaperScissors />} />
+        <Route path='/rockpaperscissors' element={<RockPaperScissorsPage />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
     </AnimatePresence>

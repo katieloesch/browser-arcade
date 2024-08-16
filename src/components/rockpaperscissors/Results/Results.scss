@@ -1,0 +1,75 @@
+.results-section {
+  color: darkred;
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+
+  .timer {
+    color: red;
+    font-size: 100px;
+    font-family: var(--font-num-rps);
+  }
+
+  .results-winner {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  .results-message {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
+}
+
+.results-section.mobile {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+
+  .timer {
+    color: red;
+    font-size: 100px;
+    font-family: var(--font-num-rps);
+  }
+
+  .results-winner {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  .results-message {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 720px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 90%;
+
+    .results-winner {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    .results-message {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+  }
+  @media screen and (max-width: 720px) {
+    .timer {
+      font-size: 85px;
+    }
+  }
+  @media screen and (max-width: 280px) {
+    .results-message {
+      margin-bottom: 5px;
+    }
+  }
+}

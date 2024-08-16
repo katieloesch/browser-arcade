@@ -1,0 +1,59 @@
+.hand-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  background-color: var(--bisque);
+  width: 200px;
+  height: 200px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .player-shake {
+    animation: playerShake 0.8s ease-in-out infinite;
+  }
+
+  .comp-shake {
+    animation: compShake 0.8s ease-in-out infinite;
+  }
+
+  @keyframes compShake {
+    0%,
+    100% {
+      transform: rotate(100deg);
+    }
+    50% {
+      transform: rotate(80deg);
+    }
+  }
+  @keyframes playerShake {
+    0%,
+    100% {
+      transform: scaleY(-1) rotate(-80deg);
+    }
+    50% {
+      transform: scaleY(-1) rotate(-100deg);
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+  }
+  @media screen and (max-width: 360px) {
+    width: 120px;
+    height: 120px;
+    padding: 8px;
+  }
+  @media screen and (max-width: 280px) {
+    width: 90px;
+    height: 90px;
+    padding: 0px;
+  }
+}
