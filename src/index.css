@@ -1,21 +1,45 @@
-/* font inmports */
+/* font import - LandingPage */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/* font import - RockPaperScissors */
+@font-face {
+  /* source: CufonFonts -> https://www.cufonfonts.com/font/handlee */
+  font-family: 'Handlee';
+  src: url('./assets/fonts/handlee-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+/* source: GoogleFonts: https://fonts.google.com/specimen/Cute+Font */
+
 :root {
-  /* matrix effect */
+  /*** colours - MatrixEffectCanvas ***/
   --black: rgb(17, 17, 17);
   --bg: rgb(17, 17, 17);
   --white: rgb(255, 255, 255);
   --green: rgb(0, 204, 51);
 
-  /* fonts */
-  --font-editorial: 'Press Start 2P';
-
-  /* buttons */
+  /*** colours - LandingPage ***/
   --btn-ttt: yellow;
   --btn-hangman: rgb(255, 70, 252);
   --btn-simon: #21ebff;
   --btn-rps: tomato;
+
+  /*** colours - RockPaperScissors ***/
+  --primary-rps: #b83700;
+  --primary-accent-rps: #732727;
+  --bg-rps: #f5b882;
+  --bg-rps2: #f7caa2;
+  --bg-rps3: #f6b378;
+  --bisque: #ffe4c4;
+
+  /*** font - LandingPage ***/
+  --font-editorial: 'Press Start 2P';
+
+  /*** fonts - RockPaperScissors ***/
+  --font-main-rps: 'Handlee', 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-num-rps: 'Cute Font', sans-serif;
 }
 
 html {
@@ -48,4 +72,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+.btn {
+  cursor: pointer;
 }

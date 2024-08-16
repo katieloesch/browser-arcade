@@ -1,0 +1,37 @@
+.btn-home {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  height: 32px;
+  width: 160px;
+  background-color: transparent;
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-size: 1rem;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    transform: translateX(-12px);
+    background-position: 160px 0;
+  }
+}
+
+.btn-home-rps {
+  border: 2px solid var(--primary-rps);
+  //   background: {
+  //     background-size: 320px 45px;
+  //   }
+  //   background: -webkit-linear-gradient(
+  //     0deg,
+  //     var(--bg-rps) 50%,
+  //     var(--primary-rps) 50%
+  //   );
+
+  a {
+    color: var(--primary-rps);
+  }
+}

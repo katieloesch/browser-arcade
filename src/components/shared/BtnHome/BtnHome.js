@@ -1,12 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './BtnHome.scss';
 
-const BtnHome = () => {
+const BtnHome = ({ page }) => {
   return (
-    <button>
-        <Link to='/'>Home</Link>
-    </button>
-  )
-}
+    <div className={`btn btn-home btn-home-${page}`}>
+      <Link to='/'>&#8592; Back to Arcade</Link>
+    </div>
+  );
+};
 
-export default BtnHome
+export default BtnHome;
