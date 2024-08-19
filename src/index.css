@@ -12,6 +12,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
 /* source: GoogleFonts: https://fonts.google.com/specimen/Cute+Font */
 
+/* font import - Hangman */
+
+@font-face {
+  /* source: https://www.fontsquirrel.com/fonts/mitr */
+  font-family: 'mitr';
+  src: url('./assets/fonts/mitr-light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  /* source: https://www.fontsquirrel.com/fonts/mitr */
+  font-family: 'mitr';
+  src: url('./assets/fonts/mitr-regular.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 :root {
   /*** colours - MatrixEffectCanvas ***/
   --black: rgb(17, 17, 17);
@@ -33,6 +51,14 @@
   --bg-rps3: #f6b378;
   --bisque: #ffe4c4;
 
+  /*** colours - Hangman ***/
+  --h-offwhite: rgb(228, 228, 226);
+  --h-bg: rgb(97, 69, 106);
+  --h-bg-light: rgb(120, 83, 132);
+  --h-primary: rgb(202, 171, 215);
+  --h-primary-a: rgba(202, 171, 215, 0.4);
+  --h-secondary: rgb(153, 153, 153);
+
   /*** font - LandingPage ***/
   --font-editorial: 'Press Start 2P';
 
@@ -40,6 +66,10 @@
   --font-main-rps: 'Handlee', 'Trebuchet MS', 'Lucida Sans Unicode',
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-num-rps: 'Cute Font', sans-serif;
+
+  /*** fonts - Hangman ***/
+  --h-font: 'mitr', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html {
