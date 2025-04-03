@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BtnHome, GameContainer } from '../../components';
+
 import {
   Categories,
   Figure,
@@ -10,16 +10,17 @@ import {
   Notification,
   Word,
   WrongLetters,
-} from '../../components/hangman';
-import { show } from '../../util/hangman_helper_functions';
-import { animals, cities, films, words } from '../../assets/hangman/word_lists';
+} from '../../components';
+
+import { show } from '../../util/helper_functions';
+import { animals, cities, films, words } from '../../assets/word_lists';
 
 import './Hangman.scss';
 
 let selectedWord = words[Math.floor(Math.random() * words.length)].word;
 const categories = ['random', 'animals', 'cities', 'films'];
 
-const Hangman = () => {
+function Hangman() {
   const [playable, setPlayable] = useState(false);
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
@@ -100,48 +101,46 @@ const Hangman = () => {
       }
     }
   }
-  return (
-    <GameContainer game={'hangman'}>
-      <BtnHome page='hangman' />
-      <div className='hangman-app'>
-        <Header playable={playable} />
-        <div className='game-container'>
-          <Figure wrongLetters={wrongLetters} />
-          <Word selectedWord={selectedWord} correctLetters={correctLetters} />
-          <WrongLetters wrongLetters={wrongLetters} />
-          <Hint
-            setShowHint={setShowHint}
-            showHint={showHint}
-            selectedWord={selectedWord}
-            list={list}
-          />
-          <Categories
-            category={category}
-            setCategory={setCategory}
-            categories={categories}
-            changeWordList={changeWordList}
-            play={play}
-          />
-          <Keyboard
-            handleKeyClick={handleKeyClick}
-            setShowKeys={setShowKeys}
-            showKeys={showKeys}
-            wrongLetters={wrongLetters}
-            correctLetters={correctLetters}
-          />
-        </div>
 
-        <Modal
-          correctLetters={correctLetters}
-          wrongLetters={wrongLetters}
+  return (
+    <div className='hangman-app'>
+      <Header playable={playable} />
+      <div className='game-container'>
+        <Figure wrongLetters={wrongLetters} />
+        <Word selectedWord={selectedWord} correctLetters={correctLetters} />
+        <WrongLetters wrongLetters={wrongLetters} />
+        <Hint
+          setShowHint={setShowHint}
+          showHint={showHint}
           selectedWord={selectedWord}
-          setPlayable={setPlayable}
+          list={list}
+        />
+        <Categories
+          category={category}
+          setCategory={setCategory}
+          categories={categories}
+          changeWordList={changeWordList}
           play={play}
         />
-        <Notification showNotification={showNotification} />
+        <Keyboard
+          handleKeyClick={handleKeyClick}
+          setShowKeys={setShowKeys}
+          showKeys={showKeys}
+          wrongLetters={wrongLetters}
+          correctLetters={correctLetters}
+        />
       </div>
-    </GameContainer>
+
+      <Modal
+        correctLetters={correctLetters}
+        wrongLetters={wrongLetters}
+        selectedWord={selectedWord}
+        setPlayable={setPlayable}
+        play={play}
+      />
+      <Notification showNotification={showNotification} />
+    </div>
   );
-};
+}
 
 export default Hangman;

@@ -7,7 +7,7 @@ const TicTacToe = () => {
   return (
     <GameContainer game={'ttt'}>
       <h2>TicTacToe</h2>
-      <BtnHome />
+      <BtnHome page='ttt' />
     </GameContainer>
   );
 };

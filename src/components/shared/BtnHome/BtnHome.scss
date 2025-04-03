@@ -22,16 +22,25 @@
 
 .btn-home-rps {
   border: 2px solid var(--primary-rps);
-  //   background: {
-  //     background-size: 320px 45px;
-  //   }
-  //   background: -webkit-linear-gradient(
-  //     0deg,
-  //     var(--bg-rps) 50%,
-  //     var(--primary-rps) 50%
-  //   );
-
   a {
     color: var(--primary-rps);
+  }
+}
+.btn-home-ttt {
+  border: 2px solid var(--primary-rps);
+  a {
+    color: var(--primary-rps);
+  }
+}
+.btn-home-simon {
+  border: 2px solid var(--primary-rps);
+  a {
+    color: var(--primary-rps);
+  }
+}
+.btn-home-hangman {
+  border: 2px solid var(--h-bg-light);
+  a {
+    color: var(--h-bg-light);
   }
 }

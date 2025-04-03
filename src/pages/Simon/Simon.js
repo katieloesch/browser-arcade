@@ -7,7 +7,7 @@ const Simon = () => {
   return (
     <GameContainer game={'simon'}>
       <h2>Simon</h2>
-      <BtnHome />
+      <BtnHome page='simon' />
     </GameContainer>
   );
 };
